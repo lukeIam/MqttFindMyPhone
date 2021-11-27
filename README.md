@@ -20,6 +20,6 @@ docker-compose build
 docker-compose up -d
 ```
 - wait until a message `Not logged in` is published on topic `FindMyPhone/log`
-- open a private tab in your browser, login to https://google.com export the cookies with [EditThisCookie](https://www.editthiscookie.com)
+- open a private tab in your browser, login to https://google.com and export the cookies with [EditThisCookie](https://www.editthiscookie.com)
 - post the cookie-json as payload to `FindMyPhone/setCookie` (only required once - cookies are stored and refreshed automatically)
-- post the device name (exactly as shown here) to `FindMyPhone/ring` to trigger a ring (takes a few seconds)
+- post the device name (exactly as shown [here](https://www.google.com/android/find)) to `FindMyPhone/ring` to trigger a ring (takes a few seconds)

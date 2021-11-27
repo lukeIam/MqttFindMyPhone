@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  mqttfindmyphone:
+    image: mqttfindmyphone
+    build:
+      context: .
+      network: host
+    container_name: mqttfindmyphone    
+    restart: unless-stopped
+    volumes:
+      - ./data/session:/session
